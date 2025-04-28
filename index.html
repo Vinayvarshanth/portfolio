@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinay Sai Varshanth's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .project-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    #home img {
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      max-width: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+    #home img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <header class="bg-blue-600 text-white py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md">
+    <div class="logo text-xl font-bold ml-4">
+      <a href="#home" class="hover:text-blue-300 transition duration-300">Vinay Sai Varshanth</a>
+    </div>
+    <nav class="mr-4">
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="hover:text-blue-300 transition duration-300">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-300 transition duration-300">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-300 transition duration-300">Projects</a></li>
+        <li><a href="#achievements" class="hover:text-blue-300 transition duration-300">Achievements</a></li>
+        <li><a href="#resume" class="hover:text-blue-300 transition duration-300">Resume</a></li>
+        <li><a href="#contact" class="hover:text-blue-300 transition duration-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <section id="home" class="text-center mb-16">
+      <img src="./images/profile.jpg" alt="Profile Picture" />
+      <h1 class="text-3xl font-bold text-blue-700">Vinay Sai Varshanth</h1>
+      <p class="text-lg text-gray-600 mt-2">Aspiring Computer Science Engineer | Problem Solver | Quick Learner</p>
+      <button onclick="window.location.href='#about'" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full mt-6 transition duration-300">Learn More</button>
+    </section>
+
+    <section id="about" class="text-center mb-16 bg-gray-50 rounded-lg shadow-md py-8 px-6">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4">About Me</h2>
+      <p class="text-gray-700 text-lg">A dedicated and quick-learning Computer Science Engineering student at Lovely Professional University, passionate about leveraging technology to solve real-world problems. Eager to apply my skills in programming, data analysis, and problem-solving in innovative projects.</p>
+      <div class="skills mt-6">
+        <h3 class="text-xl font-semibold text-blue-600 mb-3">Skills</h3>
+        <ul class="flex justify-center flex-wrap gap-4">
+          <li class="bg-blue-200 text-blue-700 px-4 py-2 rounded-full">C</li>
+          <li class="bg-blue-200 text-blue-700 px-4 py-2 rounded-full">C++</li>
+          <li class="bg-blue-200 text-blue-700 px-4 py-2 rounded-full">Java</li>
+          <li class="bg-blue-200 text-blue-700 px-4 py-2 rounded-full">HTML</li>
+          <li class="bg-blue-200 text-blue-700 px-4 py-2 rounded-full">CSS</li>
+          <li class="bg-blue-200 text-blue-700 px-4 py-2 rounded-full">JavaScript</li>
+          <li class="bg-blue-200 text-blue-700 px-4 py-2 rounded-full">Tableau</li>
+          <li class="bg-blue-200 text-blue-700 px-4 py-2 rounded-full">MySQL</li>
+          <li class="bg-blue-200 text-blue-700 px-4 py-2 rounded-full">Excel</li>
+          <li class="bg-blue-200 text-blue-700 px-4 py-2 rounded-full">Problem-Solving</li>
+          <li class="bg-blue-200 text-blue-700 px-4 py-2 rounded-full">Teamwork</li>
+          <li class="bg-blue-200 text-blue-700 px-4 py-2 rounded-full">Quick Learner</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="text-center mb-16">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4">Featured Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="project-card bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold text-blue-600 mb-2">Tableau Based Salary Dashboard</h3>
+          <img src="https://user-images.githubusercontent.com/124501309/227755419-ff277f69-fd14-4d51-b85f-973c25a6219f.png" alt="Tableau Project" />
+          <p class="text-gray-700 mb-4">Implemented a salary dashboard using Tableau, analyzing viewership trends, genre analysis, and audience segmentation. Developed interactive visualizations to showcase salary distributions, industry trends, and workforce demographics.</p>
+          <p class="text-gray-500 text-sm">Technologies: Excel, Tableau</p>
+          <button onclick="alert('Tableau Based Salary Dashboard Details')" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">View Details</button>
+        </div>
+        <div class="project-card bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold text-blue-600 mb-2">Library Management System</h3>
+          <img src="https://i.ytimg.com/vi/uLbwetH5yCU/maxresdefault.jpg" alt="Library Management System" />
+          <p class="text-gray-700 mb-4">Developed a basic C application to manage over 100 books and 50 users, optimizing common library operations. Implemented core features like book management, user registration, and transaction handling, reducing manual effort.</p>
+          <p class="text-gray-500 text-sm">Technologies: C, Data Structures</p>
+          <button onclick="alert('Library Management System Details')" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">View Details</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="text-center mb-16 bg-gray-50 rounded-lg shadow-md py-8 px-6">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4">Achievements</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="achievement-card bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold text-blue-600 mb-1">Cloud Computing</h3>
+          <p class="text-gray-500 text-sm">Date: October 2024</p>
+          <p class="text-gray-700">NPTEL Certified</p>
+        </div>
+        <div class="achievement-card bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold text-blue-600 mb-1">Data Structures and Algorithms</h3>
+          <p class="text-gray-500 text-sm">Date: July 2024</p>
+          <p class="text-gray-700">Udemy Certified</p>
+        </div>
+        <div class="achievement-card bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold text-blue-600 mb-1">Machine Learning and Data Science</h3>
+          <p class="text-gray-500 text-sm">Date: April 2024</p>
+          <p class="text-gray-700">Geeks for Geeks Certified</p>
+        </div>
+        <div class="achievement-card bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold text-blue-600 mb-1">Programming in C++</h3>
+          <p class="text-gray-500 text-sm">Date: September 2023</p>
+          <p class="text-gray-700">Coursera Certified</p>
+        </div>
+        <div class="achievement-card bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-semibold text-blue-600 mb-1">SmartIndia Hackathon - Top 10</h3>
+          <p class="text-gray-700">Selected among Top 10 teams at University Level in SmartIndia Hackathon.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="text-center mb-16">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4">Resume</h2>
+      <a href="vinay-resume.pdf" download class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">Download Resume</a>
+    </section>
+
+    <section id="contact" class="text-center mb-16 bg-gray-50 rounded-lg shadow-md py-8 px-6">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4">Contact Me</h2>
+      <form action="mailto:your-email@example.com" method="POST" enctype="text/plain" class="max-w-xl mx-auto">
+        <div class="mb-4">
+          <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+        <div class="mb-4">
+          <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+        <div class="mb-4">
+          <textarea name="message" rows="5" placeholder="Your Message" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        </div>
+        <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
